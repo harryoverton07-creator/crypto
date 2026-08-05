@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-08-05T15:42:20.709190",
+  "trading_pot_start": 1037.3941800906114,
+  "trading_pot_end": 1037.6641800906114,
+  "profit_loss": 0.30000000000000004,
+  "skimmed": 0.030000000000000006,
+  "positions": {
+    "BTC": {
+      "signal": "BUY"
+    },
+    "ETH": {
+      "signal": "HOLD"
+    },
+    "SOL": {
+      "signal": "HOLD"
+    },
+    "XRP": {
+      "signal": "HOLD"
+    },
+    "ADA": {
+      "signal": "HOLD"
+    }
+  },
+  "allocations": {
+    "BTC": 0.2,
+    "ETH": 0.2,
+    "SOL": 0.2,
+    "XRP": 0.2,
+    "ADA": 0.2
+  },
+  "btc_regime": "MED_VOL"
+}

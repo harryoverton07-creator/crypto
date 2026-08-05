@@ -1,0 +1,163 @@
+from engine.historical import get_candles
+
+import json
+from datetime import datetime
+from shared_vault import Vault
+import config
+import requests
+from engine.historical import get_candles
+import statistics
+
+def get_live_price(coin: str):
+    """
+    Fetches live spot price from Kraken public API.
+    Works in the UK.
+    """
+    symbol_map = {
+        "BTC": "XBTUSD",
+        "ETH": "ETHUSD",
+        "SOL": "SOLUSD",
+        "XRP": "XRPUSD",
+        "ADA": "ADAUSD"
+    }
+
+    pair = symbol_map.get(coin)
+    if not pair:
+        return None
+
+    url = f"https://api.kraken.com/0/public/Ticker?pair={pair}"
+
+    try:
+        response = requests.get(url, timeout=5)
+        data = response.json()
+
+        # Kraken returns a dict with one key inside "result"
+        result = list(data["result"].values())[0]
+
+        # "c" = last trade price
+        return float(result["c"][0])
+    except Exception:
+        return None
+
+def get_mock_signal(coin: str):
+    # Simple placeholder logic: rotate between LONG / SHORT / HOLD
+    # You will replace this with your real predictor later
+    signals = ["LONG", "SHORT", "HOLD"]
+    idx = hash(coin + datetime.now().strftime("%Y-%m-%d %H")) % 3
+    return signals[idx], 0.7  # (signal, confidence)
+
+class Engine:
+    def __init__(self, vault: Vault):
+        self.vault = vault
+        self.coins = config.COINS
+        self.futures = config.FUTURES
+        self.model_settings = config.MODEL
+        self.hedging_settings = config.HEDGING
+
+    def run_cycle(self):
+        """
+        Runs one full decision cycle across all coins.
+        Returns a summary dict for dashboard + history.
+        """
+        trading_pot_start = self.vault.trading_pot
+        allocations = {}
+        positions = {}
+        profit_loss = 0.0
+
+        # Simple equal allocation for now
+        per_coin_allocation = trading_pot_start / len(self.coins)
+
+        for coin in self.coins:
+            price = get_live_price(coin)
+            candles = get_candles(coin, interval="15m", limit=500)
+            signal, confidence = get_mock_signal(coin)
+
+            positions[coin] = {
+                "signal": signal,
+                "confidence": confidence,
+                "price": price,
+                "allocation": per_coin_allocation
+            }
+
+            # Mock P/L: LONG = +1%, SHORT = +0.5%, HOLD = 0
+            if signal == "LONG":
+                profit_loss += per_coin_allocation * 0.01
+            elif signal == "SHORT":
+                profit_loss += per_coin_allocation * 0.005
+
+            allocations[coin] = per_coin_allocation / trading_pot_start
+
+        # Update trading pot
+        new_trading_pot = trading_pot_start + profit_loss
+        self.vault.update_trading_pot(new_trading_pot)
+
+        # Skim profits into vault
+        skimmed = self.vault.skim(profit_loss, rate=0.10)
+
+        # Save allocation for pie chart
+        self.vault.set_allocation(allocations)
+
+        # Build dashboard + history payload
+        summary = {
+            "timestamp": datetime.now().isoformat(),
+            "trading_pot_start": trading_pot_start,
+            "trading_pot_end": new_trading_pot,
+            "profit_loss": profit_loss,
+            "skimmed": skimmed,
+            "positions": positions,
+            "allocations": allocations
+        }
+
+        self._write_dashboard(summary)
+        self._write_portfolio_history(summary)
+
+        return summary
+
+    def _write_dashboard(self, summary: dict):
+        dashboard_data = {
+            "timestamp": summary["timestamp"],
+            "portfolio_value": summary["trading_pot_end"] + self.vault.vault_balance,
+            "profit_loss": summary["profit_loss"],
+            "percent_change": (
+                (summary["trading_pot_end"] - summary["trading_pot_start"])
+                / summary["trading_pot_start"]
+                if summary["trading_pot_start"] > 0 else 0
+            ),
+            "vault_balance": self.vault.vault_balance,
+            "vault_percent_of_start": (
+                (self.vault.vault_balance / 1000.0) * 100
+            ),
+        }
+
+        with open(config.DASHBOARD_PATH, "w") as f:
+            json.dump(dashboard_data, f, indent=4)
+
+        # Allocation file for pie chart
+        allocation_data = {
+            "timestamp": summary["timestamp"],
+            "allocations": summary["allocations"]
+        }
+
+        with open(config.ALLOCATION_PATH, "w") as f:
+            json.dump(allocation_data, f, indent=4)
+
+    def _write_portfolio_history(self, summary: dict):
+        history_path = config.PORTFOLIO_HISTORY_PATH
+
+        try:
+            with open(history_path, "r") as f:
+                history = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            history = []
+
+        point = {
+            "timestamp": summary["timestamp"],
+            "trading_pot": summary["trading_pot_end"],
+            "vault_balance": self.vault.vault_balance,
+            "total_equity": summary["trading_pot_end"] + self.vault.vault_balance
+        }
+
+        history.append(point)
+
+        with open(history_path, "w") as f:
+            json.dump(history, f, indent=4)

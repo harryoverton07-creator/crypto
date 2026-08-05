@@ -1,0 +1,22 @@
+{
+    "BTC": {
+        "entry_price": null,
+        "peak_price": null
+    },
+    "ETH": {
+        "entry_price": 1874.0,
+        "peak_price": 1874.0
+    },
+    "SOL": {
+        "entry_price": 73.49,
+        "peak_price": 73.49
+    },
+    "XRP": {
+        "entry_price": null,
+        "peak_price": null
+    },
+    "ADA": {
+        "entry_price": null,
+        "peak_price": null
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Predictor Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #111; color: #eee; }
+    .container { max-width: 1100px; margin: 40px auto; }
+    .card { background: #1b1b1b; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+    canvas { background: #000; border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px; border-bottom: 1px solid #333; }
+    .profit { color: #4caf50; }
+    .loss { color: #f44336; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Crypto Predictor Dashboard</h1>
+
+  <div id="latest" class="card"></div>
+  <div id="positions" class="card"></div>
+  <div id="vault" class="card"></div>
+
+  <div class="card">
+    <h2>Equity Curve</h2>
+    <canvas id="equityChart" height="80"></canvas>
+  </div>
+
+  <div class="card">
+    <h2>Per-Coin P&L</h2>
+    <canvas id="coinChart" height="80"></canvas>
+  </div>
+</div>
+
+<script>
+async function loadJSON(path) {
+  const url = `https://raw.githubusercontent.com/harryoverton07-creator/crypto/main/docs/${path}`;
+  const res = await fetch(url);
+  return await res.json();
+}
+
+async function loadDashboard() {
+  const summary = await loadJSON("dashboard.json");
+  const vault = await loadJSON("vault.json");
+  const history = await loadJSON("portfolio_history.json");
+  const coinpnl = await loadJSON("coin_pnl.json");
+
+  // Latest cycle
+  document.getElementById("latest").innerHTML = `
+    <h2>Latest Cycle</h2>
+    <p><b>Timestamp:</b> ${summary.timestamp}</p>
+    <p><b>Trading pot start:</b> ${summary.trading_pot_start.toFixed(2)}</p>
+    <p><b>Trading pot end:</b> ${summary.trading_pot_end.toFixed(2)}</p>
+    <p><b>P&L:</b> <span class="${summary.profit_loss >= 0 ? 'profit' : 'loss'}">
+      ${summary.profit_loss.toFixed(2)}
+    </span></p>
+    <p><b>Skimmed:</b> ${summary.skimmed.toFixed(2)}</p>
+    <p><b>BTC regime:</b> ${summary.btc_regime}</p>
+  `;
+
+  // Positions
+  let posHTML = "<h2>Positions</h2><table><tr><th>Coin</th><th>Signal</th><th>Allocation</th></tr>";
+  for (const coin in summary.positions) {
+    posHTML += `<tr><td>${coin}</td><td>${summary.positions[coin].signal}</td><td>${summary.allocations[coin]}</td></tr>`;
+  }
+  posHTML += "</table>";
+  document.getElementById("positions").innerHTML = posHTML;
+
+  // Vault
+  document.getElementById("vault").innerHTML = `
+    <h2>Vault</h2>
+    <p><b>Trading pot balance:</b> ${vault.balance.toFixed(2)}</p>
+    <p><b>Vault skim total:</b> ${vault.vault_value.toFixed(2)}</p>
+  `;
+
+  // Equity curve
+  const labels = history.map(x => x.timestamp);
+  const equity = history.map(x => x.trading_pot);
+
+  new Chart(document.getElementById("equityChart"), {
+    type: "line",
+    data: {
+      labels: labels,
+      datasets: [{
+        label: "Trading Pot",
+        data: equity,
+        borderColor: "#4caf50",
+        backgroundColor: "rgba(76,175,80,0.1)"
+      }]
+    }
+  });
+
+  // Coin P&L
+  const coins = Object.keys(coinpnl);
+  const pnl = Object.values(coinpnl);
+
+  new Chart(document.getElementById("coinChart"), {
+    type: "bar",
+    data: {
+      labels: coins,
+      datasets: [{
+        label: "P&L",
+        data: pnl,
+        backgroundColor: ["#4caf50","#2196f3","#ff9800","#9c27b0","#f44336"]
+      }]
+    }
+  });
+}
+
+loadDashboard();
+</script>
+</body>
+</html>
