@@ -6,41 +6,47 @@ from datetime import datetime
 
 COINS = ["BTC", "ETH", "SOL", "XRP", "ADA"]
 
+# =========================================================
+# MODEL FILES — ABSOLUTE PATHS FOR CRON
+# =========================================================
+
+MODEL_DIR = "/home/harryoverton07/crypto_predictor"
+
 MODEL_FILES = {
     "BTC": {
-        "v1": "btc_model.pkl",
-        "v2": "btc_model_v2.pkl",
-        "momentum": "btc_model_momentum.pkl",
-        "volatility": "btc_model_volatility.pkl",
-        "regime": "btc_model_regime.pkl",
+        "v1": f"{MODEL_DIR}/btc_model.pkl",
+        "v2": f"{MODEL_DIR}/btc_model_v2.pkl",
+        "momentum": f"{MODEL_DIR}/btc_model_momentum.pkl",
+        "volatility": f"{MODEL_DIR}/btc_model_volatility.pkl",
+        "regime": f"{MODEL_DIR}/btc_model_regime.pkl",
     },
     "ETH": {
-        "v1": "eth_model.pkl",
-        "v2": "eth_model_v2.pkl",
-        "momentum": "eth_model_momentum.pkl",
-        "volatility": "eth_model_volatility.pkl",
-        "regime": "eth_model_regime.pkl",
+        "v1": f"{MODEL_DIR}/eth_model.pkl",
+        "v2": f"{MODEL_DIR}/eth_model_v2.pkl",
+        "momentum": f"{MODEL_DIR}/eth_model_momentum.pkl",
+        "volatility": f"{MODEL_DIR}/eth_model_volatility.pkl",
+        "regime": f"{MODEL_DIR}/eth_model_regime.pkl",
     },
     "SOL": {
-        "v1": "sol_model.pkl",
-        "v2": "sol_model_v2.pkl",
-        "momentum": "sol_model_momentum.pkl",
-        "volatility": "sol_model_volatility.pkl",
-        "regime": "sol_model_regime.pkl",
+        "v1": f"{MODEL_DIR}/sol_model.pkl",
+        "v2": f"{MODEL_DIR}/sol_model_v2.pkl",
+        "momentum": f"{MODEL_DIR}/sol_model_momentum.pkl",
+        "volatility": f"{MODEL_DIR}/sol_model_volatility.pkl",
+        "regime": f"{MODEL_DIR}/sol_model_regime.pkl",
     },
     "XRP": {
-        "v1": "xrp_model.pkl",
-        "v2": "xrp_model_v2.pkl",
-        "momentum": "xrp_model_momentum.pkl",
-        "volatility": "xrp_model_volatility.pkl",
-        "regime": "xrp_model_regime.pkl",
+        "v1": f"{MODEL_DIR}/xrp_model.pkl",
+        "v2": f"{MODEL_DIR}/xrp_model_v2.pkl",
+        "momentum": f"{MODEL_DIR}/xrp_model_momentum.pkl",
+        "volatility": f"{MODEL_DIR}/xrp_model_volatility.pkl",
+        "regime": f"{MODEL_DIR}/xrp_model_regime.pkl",
     },
     "ADA": {
-        "v1": "ada_model.pkl",
-        "v2": "ada_model_v2.pkl",
-        "momentum": "ada_model_momentum.pkl",
-        "volatility": "ada_model_volatility.pkl",
-        "regime": "ada_model_regime.pkl",
+        "v1": f"{MODEL_DIR}/ada_model.pkl",
+        "v2": f"{MODEL_DIR}/ada_model_v2.pkl",
+        "momentum": f"{MODEL_DIR}/ada_model_momentum.pkl",
+        "volatility": f"{MODEL_DIR}/ada_model_volatility.pkl",
+        "regime": f"{MODEL_DIR}/ada_model_regime.pkl",
     },
 }
 
