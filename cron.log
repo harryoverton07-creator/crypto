@@ -1,0 +1,1428 @@
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 163, in run_cycle
+    ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 94, in get_ensemble_signal
+    models = load_models_for_coin(coin)
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 88, in load_models_for_coin
+    raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
+FileNotFoundError: Missing model file for BTC: btc_model.pkl
