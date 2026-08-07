@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-08-07T14:15:07.690545",
-  "trading_pot_start": 1041.924180090611,
-  "trading_pot_end": 1041.5241800906108,
-  "profit_loss": -0.4,
-  "skimmed": 0.0,
+  "timestamp": "2026-08-07T14:30:08.059623",
+  "trading_pot_start": 1041.5241800906108,
+  "trading_pot_end": 1041.6141800906107,
+  "profit_loss": 0.10000000000000003,
+  "skimmed": 0.010000000000000004,
   "positions": {
     "BTC": {
       "signal": "SELL"
     },
     "ETH": {
-      "signal": "SELL"
+      "signal": "BUY"
     },
     "SOL": {
       "signal": "HOLD"
