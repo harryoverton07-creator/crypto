@@ -2434,3 +2434,9 @@ To https://github.com/harryoverton07-creator/crypto.git
    74e352d..a4af77b  main -> main
 {'timestamp': '2026-08-07T15:45:07.959563', 'trading_pot_start': 1042.2241800906106, 'trading_pot_end': 1042.4941800906106, 'profit_loss': 0.30000000000000004, 'skimmed': 0.030000000000000006, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 0.2, 'ETH': 0.2, 'SOL': 0.2, 'XRP': 0.2, 'ADA': 0.2}, 'btc_regime': 'MED_VOL'}
 ✅ Auto Git push successful.
+[main 272294a] Auto update at 2026-08-07 16:00:07
+ 5 files changed, 77 insertions(+), 67 deletions(-)
+To https://github.com/harryoverton07-creator/crypto.git
+   a4af77b..272294a  main -> main
+{'timestamp': '2026-08-07T16:00:07.940422', 'trading_pot_start': 1042.4941800906106, 'trading_pot_end': 1042.2941800906106, 'profit_loss': -0.2, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'SELL'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 0.2, 'ETH': 0.2, 'SOL': 0.2, 'XRP': 0.2, 'ADA': 0.2}, 'btc_regime': 'MED_VOL'}
+✅ Auto Git push successful.
