@@ -3167,3 +3167,9 @@ Traceback (most recent call last):
     "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
                                 ~~~~~~~~~^^^
 KeyError: 'BTC'
+[main d19f897] Auto update at 2026-08-08 19:45:06
+ 1 file changed, 35 insertions(+), 35 deletions(-)
+To https://github.com/harryoverton07-creator/crypto.git
+   a795ec6..d19f897  main -> main
+{'timestamp': '2026-08-08T19:45:06.826100', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'HOLD'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 87.74368167421741, 'ETH': 263.23104502265227, 'SOL': 175.48736334843483, 'XRP': 263.23104502265227, 'ADA': 263.23104502265227}, 'btc_regime': None}
+✅ Auto Git push successful.
