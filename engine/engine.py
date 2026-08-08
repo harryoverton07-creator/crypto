@@ -149,39 +149,52 @@ def get_ensemble_signal(coin, candles):
         risk_factor = 0.4
 
     return signal, confidence, vol_pred, risk_factor, regime
+class Coin:
+    def __init__(self, name):
+        self.name = name
+        self.latest_prob = None
+        self.latest_signal = None
+        self.latest_confidence = None
+        self.latest_vol = None
+        self.latest_risk_factor = None
+        self.latest_regime = None
 
 
 class Engine:
     def __init__(self, vault):
         self.vault = vault
+        self.coins = [Coin(name) for name in COINS]
 
+        self.trading_pot = self.vault.balance
+    
     def run_cycle(self):
-        # starting pot
+    # starting pot
         trading_pot_start = self.vault.balance
 
         positions = {}
         allocations = {}
         btc_regime = None
 
-        # equal weight for now
-        for coin in COINS:
-            candles = self.vault.data[coin]
-            ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin, candles)
+    # build positions
+            # build positions into Coin objects
+        for coin in self.coins:
+            candles = self.vault.data[coin.name]
+            ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin.name, candles)
 
-            positions[coin] = {
-                "signal": ml_signal,
-                "confidence": confidence,
-                "risk_factor": risk_factor,
-                "regime": regime,
-            }
+            coin.latest_signal = ml_signal
+            coin.latest_confidence = confidence
+            coin.latest_risk_factor = risk_factor
+            coin.latest_regime = regime
+            coin.latest_prob = confidence  # or whatever metric you use
 
-            allocations[coin] = 0.2  # simple equal allocation
+    # load coins + trading pot
+        coins = self.coins
+        trading_pot = self.trading_pot
 
-            if coin == "BTC":
-                btc_regime = regime
+    # dynamic allocation using Coin objects
+        allocations = variable_cap_allocation(self.coins, self.trading_pot)
 
-        # simple P&L simulation: small random-ish gain based on signals
-        # here we just use a placeholder; your real logic can be more complex
+    # simple P&L simulation
         profit_loss = 0.0
         for coin, pos in positions.items():
             if pos["signal"] == "BUY":
@@ -191,14 +204,14 @@ class Engine:
 
         trading_pot_end = trading_pot_start + profit_loss
 
-        # skim 10% of profit to vault if positive
+    # skim 10% of profit to vault if positive
         skimmed = 0.0
         if profit_loss > 0:
             skimmed = profit_loss * 0.1
             self.vault.vault_value += skimmed
             trading_pot_end -= skimmed
 
-        # update vault balance
+    # update vault balance
         self.vault.balance = trading_pot_end
 
         summary = {
@@ -207,10 +220,14 @@ class Engine:
             "trading_pot_end": trading_pot_end,
             "profit_loss": profit_loss,
             "skimmed": skimmed,
-            "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+            "positions": {coin.name: {"signal": coin.latest_signal} for coin in self.coins},
             "allocations": allocations,
             "btc_regime": btc_regime,
         }
+
+        return summary
+
+       
 
         # write dashboard summary
         os.makedirs("dashboards", exist_ok=True)
@@ -250,3 +267,29 @@ class Engine:
             json.dump(coin_pnl, f, indent=2)
 
         return summary
+def variable_cap_allocation(coins, shared_balance, cap=0.30):
+    active = [c for c in coins if c.latest_prob and c.latest_prob > 0.10]
+
+    if not active:
+        return {}
+
+    total_conf = sum(c.latest_prob for c in active)
+    raw_weights = {c.name: c.latest_prob / total_conf for c in active}
+
+    capped = {}
+    leftover = 1.0
+
+    for name, weight in raw_weights.items():
+        allocation = min(weight, cap)
+        capped[name] = allocation
+        leftover -= allocation
+
+    uncapped_total = sum(raw_weights[name] for name in raw_weights if raw_weights[name] < cap)
+
+    if uncapped_total > 0:
+        for name in capped:
+            if raw_weights[name] < cap:
+                capped[name] += leftover * (raw_weights[name] / uncapped_total)
+
+    final_allocations = {name: shared_balance * pct for name, pct in capped.items()}
+    return final_allocations

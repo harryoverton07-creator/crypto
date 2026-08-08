@@ -2974,3 +2974,196 @@ To https://github.com/harryoverton07-creator/crypto.git
    3cbffd8..6f04967  main -> main
 {'timestamp': '2026-08-08T14:15:07.758611', 'trading_pot_start': 1052.384180090609, 'trading_pot_end': 1052.654180090609, 'profit_loss': 0.30000000000000004, 'skimmed': 0.030000000000000006, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 0.2, 'ETH': 0.2, 'SOL': 0.2, 'XRP': 0.2, 'ADA': 0.2}, 'btc_regime': 'MED_VOL'}
 ✅ Auto Git push successful.
+[main 5902eee] Auto update at 2026-08-08 14:30:07
+ 7 files changed, 64 insertions(+), 54 deletions(-)
+ create mode 100644 engine/.engine.py.swp
+To https://github.com/harryoverton07-creator/crypto.git
+   6f04967..5902eee  main -> main
+{'timestamp': '2026-08-08T14:30:07.057858', 'trading_pot_start': 1052.654180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.30000000000000004, 'skimmed': 0.030000000000000006, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 0.2, 'ETH': 0.2, 'SOL': 0.2, 'XRP': 0.2, 'ADA': 0.2}, 'btc_regime': 'MED_VOL'}
+✅ Auto Git push successful.
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 183
+    if coin == "BTC":
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 160
+    trading_pot_start = self.vault.balance
+IndentationError: expected an indented block after function definition on line 158
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 160
+    trading_pot_start = self.vault.balance
+    ^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 158
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 160
+    trading_pot_start = self.vault.balance
+    ^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 158
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 179, in run_cycle
+    coins = self.coins
+            ^^^^^^^^^^
+AttributeError: 'Engine' object has no attribute 'coins'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 183, in run_cycle
+    coin.latest_signal = ml_signal
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'latest_signal' and no __dict__ for setting new attributes
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 223, in run_cycle
+    "positions": {c: {"signal": positions[c]["signal"]} for c in COINS},
+                                ~~~~~~~~~^^^
+KeyError: 'BTC'
