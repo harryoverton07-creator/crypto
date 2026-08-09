@@ -1,49 +1,49 @@
 {
-    "timestamp": "2026-08-09T17:30:23.876924",
+    "timestamp": "2026-08-09T17:45:04.639322",
     "all_time": {
-        "total_profit_loss": 18667.995003523858,
-        "percent_change": 1866.799500352386,
-        "total_portfolio_value": 39335.990007047716,
-        "total_vault_value": 19667.995003523858
+        "total_profit_loss": 335.0333997779976,
+        "percent_change": 33.50333997779976,
+        "total_portfolio_value": 2670.066799555995,
+        "total_vault_value": 1335.0333997779976
     },
     "last_trade": {
         "BTC": {
             "signal": "HOLD",
-            "confidence": 0.4724166582523918,
-            "allocation": 2344.87800356595,
-            "trade_size": 523.32400828273,
+            "confidence": 0.4637975593723955,
+            "allocation": 208.70573166455785,
+            "trade_size": 44.89430927576126,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.2556853137413371,
-            "allocation": 1269.1145783149034,
-            "trade_size": 82.9683397473612,
+            "confidence": 0.25175591203564635,
+            "allocation": 113.2884396661724,
+            "trade_size": 7.18033904047517,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.1250000142425967,
-            "allocation": 620.4476042974328,
-            "trade_size": 9.694496026343765,
+            "confidence": 0.10634789161798056,
+            "allocation": 47.85582434100831,
+            "trade_size": 0.5412433459318065,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.8661340686440211,
-            "allocation": 4299.1259732788285,
-            "trade_size": 3225.153682368696,
+            "confidence": 0.8339404763782852,
+            "allocation": 375.26751439300267,
+            "trade_size": 260.98231398507886,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "ADA": {
             "signal": "BUY",
-            "confidence": 0.8950625564217999,
-            "allocation": 4442.714844419565,
-            "trade_size": 3559.2231530521863,
+            "confidence": 0.5664141363818955,
+            "allocation": 254.88248993525875,
+            "trade_size": 81.77266817932558,
             "pnl": 0.0,
             "skimmed": 0.0
         }
