@@ -3524,3 +3524,17 @@ To https://github.com/harryoverton07-creator/crypto.git
    c550dc3..88a5a20  main -> main
 {'timestamp': '2026-08-09T10:15:08.372430', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 161.98833539855525, 'ETH': 242.98250309783288, 'SOL': 161.98833539855525, 'XRP': 242.98250309783288, 'ADA': 242.98250309783288}, 'btc_regime': None, 'version': '2026-08-09T10:15:08.372455'}
 ✅ Auto Git push successful.
+[main 9d2459c] Auto update at 2026-08-09 10:30:08
+ 18 files changed, 181 insertions(+), 150 deletions(-)
+ create mode 100644 feature_pipeline/__pycache__/__init__.cpython-313.pyc
+ create mode 100644 feature_pipeline/__pycache__/builder.cpython-313.pyc
+ create mode 100644 models/model_ada.pkl
+ create mode 100644 models/model_btc.pkl
+ create mode 100644 models/model_eth.pkl
+ create mode 100644 models/model_sol.pkl
+ create mode 100644 models/model_xrp.pkl
+ create mode 100644 training/train_models.py
+To https://github.com/harryoverton07-creator/crypto.git
+   88a5a20..9d2459c  main -> main
+{'timestamp': '2026-08-09T10:30:08.402571', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 175.48736334843485, 'ETH': 263.23104502265227, 'SOL': 175.48736334843485, 'XRP': 263.23104502265227, 'ADA': 175.48736334843485}, 'btc_regime': None, 'version': '2026-08-09T10:30:08.402600'}
+✅ Auto Git push successful.
