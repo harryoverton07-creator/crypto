@@ -113,19 +113,38 @@ def get_ensemble_signal(coin, candles):
     latest_row = features.tail(1)
     prediction = model.predict(latest_row)[0]
 
-    # 4. Convert prediction → BUY / SELL / HOLD
-    if prediction > 0.002:
+    # === FIXED SIGNAL LOGIC ===
+
+    # raw confidence = absolute prediction size
+    raw_conf = float(abs(prediction))
+
+    # scale raw ML confidence
+    scaled_conf = raw_conf * 1000
+
+    # regime placeholder (you can upgrade this later)
+    regime = "normal"
+
+    # regime adjustment
+    if regime == "bullish":
+        scaled_conf *= 1.15
+    elif regime == "bearish":
+        scaled_conf *= 0.85
+
+    # clamp confidence between 0 and 1
+    scaled_conf = max(0.0, min(1.0, scaled_conf))
+
+    # determine signal
+    if scaled_conf > 0.55:
         ml_signal = "BUY"
-    elif prediction < -0.002:
+    elif scaled_conf < 0.45:
         ml_signal = "SELL"
     else:
         ml_signal = "HOLD"
 
-    # 5. Confidence = absolute size of prediction
-    confidence = abs(prediction)
+    confidence = scaled_conf
 
-    # 6. Return the signal + confidence + placeholders
-    return ml_signal, confidence, 0, 0, "normal"
+    # return signal + confidence + placeholders
+    return ml_signal, confidence, 0, 0, regime
 
 class Coin:
     def __init__(self, name):
