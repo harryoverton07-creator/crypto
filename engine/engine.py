@@ -3,6 +3,7 @@ import json
 import joblib
 import numpy as np
 from datetime import datetime
+from engine.historical import get_candles
 
 COINS = ["BTC", "ETH", "SOL", "XRP", "ADA"]
 
@@ -178,7 +179,10 @@ class Engine:
     # build positions
             # build positions into Coin objects
         for coin in self.coins:
-            candles = self.vault.data[coin.name]
+            
+
+            candles = get_candles(coin.name, "15m", 500)
+
             ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin.name, candles)
 
             coin.latest_signal = ml_signal

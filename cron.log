@@ -3173,3 +3173,304 @@ To https://github.com/harryoverton07-creator/crypto.git
    a795ec6..d19f897  main -> main
 {'timestamp': '2026-08-08T19:45:06.826100', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'HOLD'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 87.74368167421741, 'ETH': 263.23104502265227, 'SOL': 175.48736334843483, 'XRP': 263.23104502265227, 'ADA': 263.23104502265227}, 'btc_regime': None}
 ✅ Auto Git push successful.
+[main 0038ae2] Auto update at 2026-08-08 20:00:07
+ 3 files changed, 55 insertions(+), 49 deletions(-)
+ create mode 100644 engine/.engine.py.swp
+To https://github.com/harryoverton07-creator/crypto.git
+   d19f897..0038ae2  main -> main
+{'timestamp': '2026-08-08T20:00:07.017635', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'BUY'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {'BTC': 80.99416769927763, 'ETH': 242.98250309783288, 'SOL': 242.98250309783288, 'XRP': 242.98250309783288, 'ADA': 242.98250309783288}, 'btc_regime': None}
+✅ Auto Git push successful.
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 6, in <module>
+    from historical import get_candles
+ModuleNotFoundError: No module named 'historical'
