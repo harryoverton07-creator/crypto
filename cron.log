@@ -3564,3 +3564,45 @@ To https://github.com/harryoverton07-creator/crypto.git
    ed8819d..1754c2e  main -> main
 {'timestamp': '2026-08-09T11:30:05.549019', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'HOLD'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {}, 'btc_regime': None, 'version': '2026-08-09T11:30:05.549043'}
 ✅ Auto Git push successful.
+[main 70bebc1] Auto update at 2026-08-09 11:45:05
+ 9 files changed, 122 insertions(+), 116 deletions(-)
+To https://github.com/harryoverton07-creator/crypto.git
+   1754c2e..70bebc1  main -> main
+{'timestamp': '2026-08-09T11:45:05.732884', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'HOLD'}, 'ETH': {'signal': 'HOLD'}, 'SOL': {'signal': 'HOLD'}, 'XRP': {'signal': 'HOLD'}, 'ADA': {'signal': 'HOLD'}}, 'allocations': {}, 'btc_regime': None, 'version': '2026-08-09T11:45:05.732907'}
+✅ Auto Git push successful.
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 151
+    trading_pot_start = self.vault.balance
+    ^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 148
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 222
+    summary["version"] = datetime.utcnow().isoformat()
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 231
+    summary["version"] = datetime.utcnow().isoformat()
+IndentationError: unexpected indent
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 151
+    trading_pot_start = self.vault.balance
+    ^^^^^^^^^^^^^^^^^
+IndentationError: expected an indented block after function definition on line 148
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 20, in <module>
+    main()
+    ~~~~^^
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 13, in main
+    summary = engine.run_cycle()
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 172, in run_cycle
+    allocations = variable_cap_allocation(self.coins, trading_pot_start)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'variable_cap_allocation' is not defined. Did you mean: 'self.variable_cap_allocation'?

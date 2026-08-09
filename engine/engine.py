@@ -144,20 +144,38 @@ class Engine:
         self.coins = [Coin(name) for name in COINS]
 
         self.trading_pot = self.vault.balance
+    def variable_cap_allocation(self, coins, trading_pot):
+        active = [c for c in coins if c.latest_prob and c.latest_prob > 0.10]
+
+        if not active:
+            return {c.name: trading_pot / len(coins) for c in coins}
+
+        total_conf = sum(c.latest_confidence for c in active)
+
+        allocations = {}
+        for coin in coins:
+            if coin in active:
+                allocations[coin.name] = (coin.latest_confidence / total_conf) * trading_pot
+            else:
+                allocations[coin.name] = 0
+
+        return allocations
     
     def run_cycle(self):
+
     # starting pot
         trading_pot_start = self.vault.balance
 
         positions = {}
-        allocations = variable_cap_allocation(self.coins, trading_pot_start)
+
+    # dynamic allocation using Coin objects
+        allocations = self.variable_cap_allocation(self.coins, trading_pot_start)
+
 
         btc_regime = None
 
-    # build positions
-            # build positions into Coin objects
+    # build positions into Coin objects
         for coin in self.coins:
-            
 
             candles = get_candles(coin.name, "15m", 500)
 
@@ -167,7 +185,8 @@ class Engine:
             coin.latest_confidence = confidence
             coin.latest_risk_factor = risk_factor
             coin.latest_regime = regime
-            coin.latest_prob = confidence  # or whatever metric you use
+            coin.latest_prob = confidence  
+
             positions[coin.name] = {
                 "signal": ml_signal,
                 "confidence": confidence,
@@ -176,139 +195,56 @@ class Engine:
                 "regime": regime
             }
 
-    # load coins + trading pot
-        coins = self.coins
-        trading_pot = self.trading_pot
-
-    # dynamic allocation using Coin objects
-      
-    # === NEW ML-BASED TRADING LOGIC ===
+    # === ML-BASED TRADING LOGIC ===
 
         profit_loss = 0.0
-  
+
         for coin in self.coins:
 
-    # BUY → increase profit based on allocation and confidence
             if coin.latest_signal == "BUY":
                 profit_loss += allocations.get(coin.name, 0) * coin.latest_confidence
 
-    # SELL → decrease profit based on allocation and confidence
             elif coin.latest_signal == "SELL":
                 profit_loss -= allocations.get(coin.name, 0) * coin.latest_confidence
 
-    # HOLD → no change
             else:
                 pass
 
-# update trading pot
         trading_pot_end = trading_pot_start + profit_loss
 
-
-    # skim 10% of profit to vault if positive
-        skimmed = 0.0
-        if profit_loss > 0:
-            skimmed = profit_loss * 0.1
-            self.vault.vault_value += skimmed
-            trading_pot_end -= skimmed
-
-    # update vault balance
+     # update vault
         self.vault.balance = trading_pot_end
 
+    # build summary
         summary = {
             "timestamp": datetime.utcnow().isoformat(),
             "trading_pot_start": trading_pot_start,
             "trading_pot_end": trading_pot_end,
             "profit_loss": profit_loss,
-            "skimmed": skimmed,
-            "positions": {coin.name: {"signal": coin.latest_signal} for coin in self.coins},
+            "skimmed": 0.0,
+            "positions": positions,
             "allocations": allocations,
             "btc_regime": btc_regime,
+            "version": datetime.utcnow().isoformat()
         }
 
-# ⭐ ADD VERSION STAMP HERE 
-        summary["version"] = datetime.utcnow().isoformat()
-
-# ⭐ WRITE DASHBOARD BEFORE RETURN
+    # write dashboard BEFORE return
         os.makedirs("dashboards", exist_ok=True)
         with open(os.path.join("dashboards", "dashboard.json"), "w") as f:
-            json.dump(summary, f, indent=2)
+            json.dump(summary, f, indent=4) 
 
-# ⭐ WRITE HISTORY BEFORE RETURN
+    # write history
         os.makedirs("history", exist_ok=True)
         history_path = os.path.join("history", "portfolio_history.json")
         entry = {
             "timestamp": summary["timestamp"],
             "trading_pot": trading_pot_end,
-            "vault": self.vault.balance,
-            "profit_loss": profit_loss,
         }
-# append entry to history file here…
-
-# ⭐ NOW return summary
-        return summary
-       
-
-        # write dashboard summary
-        os.makedirs("dashboards", exist_ok=True)
-        with open(os.path.join("dashboards", "dashboard.json"), "w") as f:
-            json.dump(summary, f, indent=2)
-
-        # write equity curve history
-        os.makedirs("history", exist_ok=True)
-        history_path = os.path.join("history", "portfolio_history.json")
-        entry = {
-            "timestamp": summary["timestamp"],
-            "trading_pot": summary["trading_pot_end"],
-        }
-        if os.path.exists(history_path):
-            with open(history_path, "r") as f:
-                data = json.load(f)
-        else:
-            data = []
-        data.append(entry)
-        with open(history_path, "w") as f:
-            json.dump(data, f, indent=2)
-
-        # write per-coin P&L
-        coin_pnl_path = os.path.join("history", "coin_pnl.json")
-        if os.path.exists(coin_pnl_path):
-            with open(coin_pnl_path, "r") as f:
-                coin_pnl = json.load(f)
-        else:
-            coin_pnl = {c: 0 for c in COINS}
-
-        for coin in COINS:
-            sig = positions[coin]["signal"]
-            if sig == "BUY":
-                coin_pnl[coin] += profit_loss * allocations[coin]
-
-        with open(coin_pnl_path, "w") as f:
-            json.dump(coin_pnl, f, indent=2)
+        with open(history_path, "a") as f:
+            json.dump(entry, f)
+            f.write("\n")
 
         return summary
-def variable_cap_allocation(coins, shared_balance, cap=0.30):
-    active = [c for c in coins if c.latest_prob and c.latest_prob > 0.10]
 
-    if not active:
-        return {}
 
-    total_conf = sum(c.latest_prob for c in active)
-    raw_weights = {c.name: c.latest_prob / total_conf for c in active}
 
-    capped = {}
-    leftover = 1.0
-
-    for name, weight in raw_weights.items():
-        allocation = min(weight, cap)
-        capped[name] = allocation
-        leftover -= allocation
-
-    uncapped_total = sum(raw_weights[name] for name in raw_weights if raw_weights[name] < cap)
-
-    if uncapped_total > 0:
-        for name in capped:
-            if raw_weights[name] < cap:
-                capped[name] += leftover * (raw_weights[name] / uncapped_total)
-
-    final_allocations = {name: shared_balance * pct for name, pct in capped.items()}
-    return final_allocations

@@ -1,27 +1,53 @@
 {
-  "timestamp": "2026-08-09T11:45:05.732884",
-  "trading_pot_start": 1052.924180090609,
-  "trading_pot_end": 1052.924180090609,
-  "profit_loss": 0.0,
-  "skimmed": 0.0,
-  "positions": {
-    "BTC": {
-      "signal": "HOLD"
+    "timestamp": "2026-08-09T13:14:52.244027",
+    "trading_pot_start": 1052.924180090609,
+    "trading_pot_end": 1052.924180090609,
+    "profit_loss": 0.0,
+    "skimmed": 0.0,
+    "positions": {
+        "BTC": {
+            "signal": "HOLD",
+            "confidence": 0.00033309227630233345,
+            "volatility": 0,
+            "risk_factor": 0,
+            "regime": "normal"
+        },
+        "ETH": {
+            "signal": "HOLD",
+            "confidence": 0.00013054628143758233,
+            "volatility": 0,
+            "risk_factor": 0,
+            "regime": "normal"
+        },
+        "SOL": {
+            "signal": "HOLD",
+            "confidence": 0.0001699935777070972,
+            "volatility": 0,
+            "risk_factor": 0,
+            "regime": "normal"
+        },
+        "XRP": {
+            "signal": "HOLD",
+            "confidence": 0.0005742761445622795,
+            "volatility": 0,
+            "risk_factor": 0,
+            "regime": "normal"
+        },
+        "ADA": {
+            "signal": "HOLD",
+            "confidence": 0.00010032163865644544,
+            "volatility": 0,
+            "risk_factor": 0,
+            "regime": "normal"
+        }
     },
-    "ETH": {
-      "signal": "HOLD"
+    "allocations": {
+        "BTC": 210.58483601812182,
+        "ETH": 210.58483601812182,
+        "SOL": 210.58483601812182,
+        "XRP": 210.58483601812182,
+        "ADA": 210.58483601812182
     },
-    "SOL": {
-      "signal": "HOLD"
-    },
-    "XRP": {
-      "signal": "HOLD"
-    },
-    "ADA": {
-      "signal": "HOLD"
-    }
-  },
-  "allocations": {},
-  "btc_regime": null,
-  "version": "2026-08-09T11:45:05.732907"
+    "btc_regime": null,
+    "version": "2026-08-09T13:14:52.244048"
 }
