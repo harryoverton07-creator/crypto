@@ -1,34 +1,34 @@
 {
-    "timestamp": "2026-08-09T16:29:59.119367",
-    "trading_pot_start": 2.919498380774921e+91,
-    "trading_pot_end": 4.243268443022994e+91,
-    "profit_loss": 1.3237700622480732e+91,
+    "timestamp": "2026-08-09T16:30:05.115857",
+    "trading_pot_start": 4.243268443022994e+91,
+    "trading_pot_end": 4.158403074162534e+91,
+    "profit_loss": -8.486536886045989e+89,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
-            "signal": "BUY",
-            "confidence": 0.6353849093736441,
+            "signal": "SELL",
+            "confidence": 0.35206822841256796,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.1743648201358878,
+            "confidence": 0.06846742217464924,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.3693018995556052,
+            "confidence": 0.26494631006197855,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
-            "signal": "HOLD",
-            "confidence": 0.4693442010083319,
+            "signal": "BUY",
+            "confidence": 0.7146578476609328,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
@@ -42,13 +42,13 @@
         }
     },
     "allocations": {
-        "BTC": 7.0042596843754825e+90,
-        "ETH": 1.9221364279096945e+90,
-        "SOL": 4.07105420393213e+90,
-        "XRP": 5.173885335833322e+90,
-        "ADA": 1.1023648155698583e+91
+        "BTC": 6.407075077515879e+90,
+        "ETH": 0.0,
+        "SOL": 4.821596392641999e+90,
+        "XRP": 1.300562253329431e+91,
+        "ADA": 1.8198390426777747e+91
     },
     "btc_regime": null,
-    "version": "2026-08-09T16:29:59.119385",
-    "daily_loss": 1.0593599593486588e+89
+    "version": "2026-08-09T16:30:05.115877",
+    "daily_loss": 9.545896845394647e+89
 }
