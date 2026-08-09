@@ -2,3 +2,4 @@
 {"timestamp": "2026-08-02T20:04:00.729804", "trading_pot_start": 1030.4089768711353, "trading_pot_end": 1037.8703137816642, "profit_loss": 7.461336910528832, "skimmed": 0.7461336910528833, "positions": {"BTC": {"signal": "BUY"}, "ETH": {"signal": "HOLD"}, "SOL": {"signal": "HOLD"}, "XRP": {"signal": "HOLD"}, "ADA": {"signal": "HOLD"}}, "allocations": {"BTC": 0.2, "ETH": 0.2, "SOL": 0.2, "XRP": 0.2, "ADA": 0.2}, "btc_regime": "LOW_VOL"}
 {"timestamp": "2026-08-09T14:44:00.673230", "trading_pot": 980.0, "profit_loss": -20.0, "daily_loss": 20.0}
 {"timestamp": "2026-08-09T14:45:04.500234", "trading_pot": 980.0, "profit_loss": -20.0, "daily_loss": 20.0}
+{"timestamp": "2026-08-09T15:00:05.039185", "trading_pot": 1029.5512491952913, "profit_loss": 29.55124919529126, "daily_loss": 0.0}
