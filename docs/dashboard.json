@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T11:02:04.225947",
+  "timestamp": "2026-08-09T11:04:50.438172",
   "trading_pot_start": 1052.924180090609,
   "trading_pot_end": 1052.924180090609,
   "profit_loss": 0.0,
@@ -23,5 +23,5 @@
   },
   "allocations": {},
   "btc_regime": null,
-  "version": "2026-08-09T11:02:04.225971"
+  "version": "2026-08-09T11:04:50.438196"
 }

@@ -150,7 +150,8 @@ class Engine:
         trading_pot_start = self.vault.balance
 
         positions = {}
-        allocations = {}
+        allocations = variable_cap_allocation(self.coins, trading_pot_start)
+
         btc_regime = None
 
     # build positions
