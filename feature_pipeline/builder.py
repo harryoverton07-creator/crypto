@@ -47,19 +47,29 @@ def compute_trend_strength(df):
 # Main feature builder
 # ---------------------------------------------
 
-def build_features(candles):
-    """
-    candles: list of dicts from your exchange API
-    returns: pandas DataFrame with full feature set
-    """
-
+def build_features(candles, include_label=False):
     df = pd.DataFrame(candles)
 
-    # Ensure correct types
     df["open"] = df["open"].astype(float)
     df["high"] = df["high"].astype(float)
     df["low"] = df["low"].astype(float)
     df["close"] = df["close"].astype(float)
+
+    # Indicators
+    df["rsi"] = compute_rsi(df["close"])
+    df["ema20"] = compute_ema(df["close"], 20)
+    df["ema50"] = compute_ema(df["close"], 50)
+    df["atr"] = compute_atr(df)
+    df["macd"], df["macd_signal"], df["macd_hist"] = compute_macd(df["close"])
+    df["volatility"] = compute_volatility(df["close"])
+    df["trend_strength"] = compute_trend_strength(df)
+
+    # Training-only label
+    if include_label:
+        df["future_return"] = df["close"].shift(-1) / df["close"] - 1
+
+    df = df.dropna().reset_index(drop=True)
+    return df
 
     # RSI
     df["rsi"] = compute_rsi(df["close"])
