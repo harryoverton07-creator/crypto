@@ -9399,4 +9399,5 @@ Daily Loss: £2149.67
 ────────────────────────────────────────────
 Cycle completed at 2026-08-09T19:45:37.536862
 Start: £238013.07
-End:   £416402.74
+End:   £416402.74/home/harryoverton07/crypto_predictor/runner.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"⏱  {datetime.utcnow().isoformat()} UTC\n")
