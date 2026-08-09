@@ -1,54 +1,54 @@
 {
-    "timestamp": "2026-08-09T20:15:46.137252",
-    "trading_pot_start": 667038.4031080407,
-    "trading_pot_end": 1020092.9367885087,
-    "profit_loss": 353054.5336804679,
+    "timestamp": "2026-08-09T20:30:06.826038",
+    "trading_pot_start": NaN,
+    "trading_pot_end": NaN,
+    "profit_loss": NaN,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "SELL",
-            "confidence": 0.07128352244614657,
+            "confidence": 0.1118585018019072,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.09856012596637248,
+            "confidence": 0.09458014737117929,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.17386042018920503,
+            "confidence": 0.19120045445994555,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.7917470979473293,
+            "confidence": 1.0,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ADA": {
             "signal": "BUY",
-            "confidence": 0.7457439031147892,
+            "confidence": 0.7084456124428338,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 0.0,
+        "BTC": NaN,
         "ETH": 0.0,
-        "SOL": 67766.07983993315,
-        "XRP": 308601.56091964536,
-        "ADA": 290670.7623484621
+        "SOL": NaN,
+        "XRP": NaN,
+        "ADA": NaN
     },
     "btc_regime": null,
-    "version": "2026-08-09T20:15:46.137271",
-    "daily_loss": 2340.7606176998333
+    "version": "2026-08-09T20:30:06.826055",
+    "daily_loss": 8.080304418103082e+302
 }
