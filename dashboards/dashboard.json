@@ -1,27 +1,27 @@
 {
-    "timestamp": "2026-08-09T20:30:47.772703",
-    "trading_pot_start": 1020092.9367885087,
-    "trading_pot_end": 1703285.380711974,
-    "profit_loss": 683192.4439234654,
+    "timestamp": "2026-08-09T20:45:05.490757",
+    "trading_pot_start": NaN,
+    "trading_pot_end": NaN,
+    "profit_loss": NaN,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "SELL",
-            "confidence": 0.1118585018019072,
+            "confidence": 0.04197050337687742,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.09458014737117929,
+            "confidence": 0.09041751774931174,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.19120045445994555,
+            "confidence": 0.22351757269141892,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
@@ -35,20 +35,20 @@
         },
         "ADA": {
             "signal": "BUY",
-            "confidence": 0.7084456124428338,
+            "confidence": 0.7759621812280865,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 56726.7255482045,
+        "BTC": 0.0,
         "ETH": 0.0,
-        "SOL": 96963.35575859084,
-        "XRP": 507129.31636312424,
-        "ADA": 359273.5391185892
+        "SOL": NaN,
+        "XRP": NaN,
+        "ADA": NaN
     },
     "btc_regime": null,
-    "version": "2026-08-09T20:30:47.772732",
-    "daily_loss": 2340.7606176998333
+    "version": "2026-08-09T20:45:05.490779",
+    "daily_loss": 8.080304418103082e+302
 }

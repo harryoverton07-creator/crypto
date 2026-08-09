@@ -10217,3 +10217,5 @@ To https://github.com/harryoverton07-creator/crypto.git
 To https://github.com/harryoverton07-creator/crypto.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at ff4e5f0113c0211879f0f55ccc321b765a49240e but expected 6a6e3457fde69725def13d6f1b86f5d920dc8571)
 error: failed to push some refs to 'https://github.com/harryoverton07-creator/crypto.git'
+/home/harryoverton07/crypto_predictor/runner.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  print(f"⏱  {datetime.utcnow().isoformat()} UTC\n")
