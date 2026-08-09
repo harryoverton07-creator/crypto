@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-09T10:45:08.071508",
+  "timestamp": "2026-08-09T10:47:35.372025",
   "trading_pot_start": 1052.924180090609,
   "trading_pot_end": 1052.924180090609,
   "profit_loss": 0.0,
   "skimmed": 0.0,
   "positions": {
     "BTC": {
-      "signal": "BUY"
+      "signal": "HOLD"
     },
     "ETH": {
       "signal": "HOLD"
@@ -21,13 +21,7 @@
       "signal": "HOLD"
     }
   },
-  "allocations": {
-    "BTC": 175.48736334843485,
-    "ETH": 263.23104502265227,
-    "SOL": 175.48736334843485,
-    "XRP": 263.23104502265227,
-    "ADA": 175.48736334843485
-  },
+  "allocations": {},
   "btc_regime": null,
-  "version": "2026-08-09T10:45:08.071538"
+  "version": "2026-08-09T10:47:35.372051"
 }

@@ -97,59 +97,36 @@ def load_models_for_coin(coin):
     return models
 
 
+import joblib
+from feature_pipeline.builder import build_features
+
 def get_ensemble_signal(coin, candles):
-    models = load_models_for_coin(coin)
-    X = build_features(candles).reshape(1, -1)
 
-    # sanity check: all models must match feature count
-    for name, m in models.items():
-        if getattr(m, "n_features_in_", X.shape[1]) != X.shape[1]:
-            raise ValueError(
-                f"{coin} model feature mismatch: model expects {m.n_features_in_}, "
-                f"engine provides {X.shape[1]}"
-            )
+    # 1. Build features (no label in live mode)
+    features = build_features(candles, include_label=False)
 
-    # base + v2 + momentum as main signal ensemble
-    v1_pred = int(models["v1"].predict(X)[0])
-    v2_pred = int(models["v2"].predict(X)[0])
-    mom_pred = int(models["momentum"].predict(X)[0])
+    # 2. Load the correct model for this coin
+    model_path = f"models/model_{coin.lower()}.pkl"
+    model = joblib.load(model_path)
 
-    # volatility + regime as context
-    vol_pred = int(models["volatility"].predict(X)[0])
-    regime_pred = int(models["regime"].predict(X)[0])
+    # 3. Predict the future return using the latest row
+    latest_row = features.tail(1)
+    prediction = model.predict(latest_row)[0]
 
-    # simple majority vote for direction
-    votes = [v1_pred, v2_pred, mom_pred]
-    direction = max(set(votes), key=votes.count)
-
-    # map class to signal
-    if direction in [0, 1]:  # up-ish
-        signal = "BUY"
-    elif direction in [3, 4]:  # down-ish
-        signal = "SELL"
+    # 4. Convert prediction → BUY / SELL / HOLD
+    if prediction > 0.002:
+        ml_signal = "BUY"
+    elif prediction < -0.002:
+        ml_signal = "SELL"
     else:
-        signal = "HOLD"
+        ml_signal = "HOLD"
 
-    # crude confidence: fraction of agreeing models
-    confidence = votes.count(direction) / len(votes)
+    # 5. Confidence = absolute size of prediction
+    confidence = abs(prediction)
 
-    # volatility regime mapping (example)
-    if vol_pred <= 1:
-        regime = "LOW_VOL"
-    elif vol_pred == 2:
-        regime = "MED_VOL"
-    else:
-        regime = "HIGH_VOL"
+    # 6. Return the signal + confidence + placeholders
+    return ml_signal, confidence, 0, 0, "normal"
 
-    # risk factor from regime
-    if regime == "LOW_VOL":
-        risk_factor = 1.0
-    elif regime == "MED_VOL":
-        risk_factor = 0.7
-    else:
-        risk_factor = 0.4
-
-    return signal, confidence, vol_pred, risk_factor, regime
 class Coin:
     def __init__(self, name):
         self.name = name
