@@ -1,32 +1,51 @@
 {
-  "timestamp": "2026-08-02T20:04:00.729804",
-  "trading_pot_start": 1030.4089768711353,
-  "trading_pot_end": 1037.8703137816642,
-  "profit_loss": 7.461336910528832,
-  "skimmed": 0.7461336910528833,
-  "positions": {
-    "BTC": {
-      "signal": "BUY"
+    "timestamp": "2026-08-09T14:44:00.673230",
+    "all_time": {
+        "total_profit_loss": -20.0,
+        "percent_change": -2.0,
+        "total_portfolio_value": 1960.0,
+        "total_vault_value": 980.0
     },
-    "ETH": {
-      "signal": "HOLD"
-    },
-    "SOL": {
-      "signal": "HOLD"
-    },
-    "XRP": {
-      "signal": "HOLD"
-    },
-    "ADA": {
-      "signal": "HOLD"
+    "last_trade": {
+        "BTC": {
+            "signal": "SELL",
+            "confidence": 0.11352537723861879,
+            "allocation": 91.09546968717243,
+            "trade_size": 1.1740394406274404,
+            "pnl": 0.0,
+            "skimmed": 0.0
+        },
+        "ETH": {
+            "signal": "SELL",
+            "confidence": 0.24919788043358415,
+            "allocation": 199.96232133569941,
+            "trade_size": 12.417576893154035,
+            "pnl": 0.0,
+            "skimmed": 0.0
+        },
+        "SOL": {
+            "signal": "SELL",
+            "confidence": 0.007097888352929893,
+            "allocation": 0.0,
+            "trade_size": 0.0,
+            "pnl": 0.0,
+            "skimmed": 0.0
+        },
+        "XRP": {
+            "signal": "HOLD",
+            "confidence": 0.5460186670320055,
+            "allocation": 438.1383981371522,
+            "trade_size": 130.6249980396311,
+            "pnl": 0.0,
+            "skimmed": 0.0
+        },
+        "ADA": {
+            "signal": "SELL",
+            "confidence": 0.3374822577767871,
+            "allocation": 270.8038108399758,
+            "trade_size": 30.843003517116664,
+            "pnl": 0.0,
+            "skimmed": 0.0
+        }
     }
-  },
-  "allocations": {
-    "BTC": 0.2,
-    "ETH": 0.2,
-    "SOL": 0.2,
-    "XRP": 0.2,
-    "ADA": 0.2
-  },
-  "btc_regime": "LOW_VOL"
 }

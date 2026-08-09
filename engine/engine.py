@@ -103,6 +103,7 @@ class Engine:
     def __init__(self, coins, starting_balance: float):
         self.coins = coins
         self.vault = Vault(starting_balance)
+        self.starting_balance = starting_balance
 
     def variable_cap_allocation(self, coins, trading_pot):
         active = [c for c in coins if c.latest_prob and c.latest_prob > 0.10]
@@ -205,54 +206,54 @@ class Engine:
         total_portfolio_value = trading_pot_end + total_vault_value
 
 # ---- SECTION 2: LAST TRADE ----
-    last_trade = {
-        coin.name: {
-            "signal": coin.latest_signal,
-            "confidence": coin.latest_confidence,
-            "allocation": allocations.get(coin.name, 0),
-            "trade_size": allocations.get(coin.name, 0) * (coin.latest_confidence ** 2),
-            "pnl": coin.latest_pnl,
-            "skimmed": coin.latest_skimmed
+        last_trade = {
+            coin.name: {
+                "signal": coin.latest_signal,
+                "confidence": coin.latest_confidence,
+                "allocation": allocations.get(coin.name, 0),
+                "trade_size": allocations.get(coin.name, 0) * (coin.latest_confidence ** 2),
+                "pnl": 0.0,
+                "skimmed": 0.0
+            }
+            for coin in self.coins
         }
-        for coin in self.coins
-    }
   
-    dashboard = {
-        "timestamp": datetime.utcnow().isoformat(),
+        dashboard = {
+            "timestamp": datetime.utcnow().isoformat(),
+   
+            "all_time": {
+                "total_profit_loss": total_profit_loss,
+                "percent_change": percent_change,
+                "total_portfolio_value": total_portfolio_value,
+                "total_vault_value": total_vault_value
+            },
 
-        "all_time": {
-            "total_profit_loss": total_profit_loss,
-            "percent_change": percent_change,
-            "total_portfolio_value": total_portfolio_value,
-            "total_vault_value": total_vault_value
-        },
-
-        "last_trade": last_trade
-    }
+            "last_trade": last_trade
+        }
 
 # ---- WRITE DASHBOARD ----
-    with open("dashboard.json", "w") as f:
-        json.dump(dashboard, f, indent=4)
+        with open("dashboard.json", "w") as f:
+            json.dump(dashboard, f, indent=4)
 
 # ---- WRITE HISTORY ----
-    history_entry = {
-        "timestamp": dashboard["timestamp"],
-        "trading_pot": trading_pot_end,
-        "profit_loss": profit_loss,
-        "daily_loss": self.vault.daily_loss
-    }
+        history_entry = {
+            "timestamp": dashboard["timestamp"],
+            "trading_pot": trading_pot_end,
+            "profit_loss": profit_loss,
+            "daily_loss": self.vault.daily_loss
+        }
   
-    with open("portfolio_history.json", "a") as f:
-        json.dump(history_entry, f)
-        f.write("\n")
+        with open("portfolio_history.json", "a") as f:
+            json.dump(history_entry, f)
+            f.write("\n")
 
-    import subprocess
+        import subprocess
 
-    try:
-        auto_git_push() 
-    except Exception as e:
-        print("❌ Git push failed:", e)
-    finally:
-        return summary
+        try:
+            auto_git_push() 
+        except Exception as e:
+            print("❌ Git push failed:", e)
+        finally:
+            return summary
 
         
