@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-08-09T20:30:06.826038",
+    "timestamp": "2026-08-09T20:30:12.810562",
     "trading_pot_start": NaN,
     "trading_pot_end": NaN,
     "profit_loss": NaN,
@@ -49,6 +49,6 @@
         "ADA": NaN
     },
     "btc_regime": null,
-    "version": "2026-08-09T20:30:06.826055",
+    "version": "2026-08-09T20:30:12.810579",
     "daily_loss": 8.080304418103082e+302
 }
