@@ -3606,3 +3606,9 @@ Traceback (most recent call last):
     allocations = variable_cap_allocation(self.coins, trading_pot_start)
                   ^^^^^^^^^^^^^^^^^^^^^^^
 NameError: name 'variable_cap_allocation' is not defined. Did you mean: 'self.variable_cap_allocation'?
+[main 63da297] Auto update at 2026-08-09 13:15:05
+ 9 files changed, 94 insertions(+), 93 deletions(-)
+To https://github.com/harryoverton07-creator/crypto.git
+   1fb55b9..63da297  main -> main
+{'timestamp': '2026-08-09T13:15:05.586132', 'trading_pot_start': 1052.924180090609, 'trading_pot_end': 1052.924180090609, 'profit_loss': 0.0, 'skimmed': 0.0, 'positions': {'BTC': {'signal': 'HOLD', 'confidence': np.float64(3.2842437392711116e-05), 'volatility': 0, 'risk_factor': 0, 'regime': 'normal'}, 'ETH': {'signal': 'HOLD', 'confidence': np.float64(7.492174123741571e-05), 'volatility': 0, 'risk_factor': 0, 'regime': 'normal'}, 'SOL': {'signal': 'HOLD', 'confidence': np.float64(6.176611961887673e-05), 'volatility': 0, 'risk_factor': 0, 'regime': 'normal'}, 'XRP': {'signal': 'HOLD', 'confidence': np.float64(0.0006665224985721919), 'volatility': 0, 'risk_factor': 0, 'regime': 'normal'}, 'ADA': {'signal': 'HOLD', 'confidence': np.float64(0.00028519324058535556), 'volatility': 0, 'risk_factor': 0, 'regime': 'normal'}}, 'allocations': {'BTC': 210.58483601812182, 'ETH': 210.58483601812182, 'SOL': 210.58483601812182, 'XRP': 210.58483601812182, 'ADA': 210.58483601812182}, 'btc_regime': None, 'version': '2026-08-09T13:15:05.586151'}
+✅ Auto Git push successful.
