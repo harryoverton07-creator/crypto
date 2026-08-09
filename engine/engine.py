@@ -181,8 +181,7 @@ class Engine:
         trading_pot = self.trading_pot
 
     # dynamic allocation using Coin objects
-        allocations = variable_cap_allocation(self.coins, self.trading_pot)
-
+      
     # === NEW ML-BASED TRADING LOGIC ===
 
         profit_loss = 0.0
