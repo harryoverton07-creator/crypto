@@ -5049,3 +5049,1642 @@ Continuing engine...
 
 ────────────────────────────────────────────/home/harryoverton07/crypto_predictor/runner.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   print(f"⏱  {datetime.utcnow().isoformat()} UTC\n")
+[main ac6868a] Auto update at 2026-08-09T14:15:04.240891
+ 8 files changed, 4569 insertions(+), 64 deletions(-)
+To https://github.com/harryoverton07-creator/crypto.git
+   88e0f4e..ac6868a  main -> main
+
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────
+
+❌ ERROR during cycle:
+Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 30, in main
+    print(f"Cycle completed at {summary['timestamp']}")
+                                ~~~~~~~^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+Continuing engine...
+
+────────────────────────────────────────────Traceback (most recent call last):
+  File "/home/harryoverton07/crypto_predictor/runner.py", line 1, in <module>
+    from engine.engine import Engine, Coin
+  File "/home/harryoverton07/crypto_predictor/engine/engine.py", line 256
+    return summary
+    ^^^^^^^^^^^^^^
+SyntaxError: 'return' outside function

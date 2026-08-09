@@ -194,30 +194,65 @@ class Engine:
             "daily_loss": self.vault.daily_loss,
         }
 
-        # write dashboard
-        os.makedirs("dashboards", exist_ok=True)
-        with open(os.path.join("dashboards", "dashboard.json"), "w") as f:
-            json.dump(summary, f, indent=4)
+        # ============================
+# NEW DASHBOARD + HISTORY EXPORT
+# ============================
 
-        # write history
-        os.makedirs("history", exist_ok=True)
-        history_path = os.path.join("history", "portfolio_history.json")
-        entry = {
-            "timestamp": summary["timestamp"],
-            "trading_pot": trading_pot_end,
-            "profit_loss": profit_loss,
-            "daily_loss": self.vault.daily_loss,
+# ---- SECTION 1: ALL TIME ----
+        total_vault_value = self.vault.balance
+        total_profit_loss = self.vault.balance - self.starting_balance
+        percent_change = (total_profit_loss / self.starting_balance) * 100
+        total_portfolio_value = trading_pot_end + total_vault_value
+
+# ---- SECTION 2: LAST TRADE ----
+    last_trade = {
+        coin.name: {
+            "signal": coin.latest_signal,
+            "confidence": coin.latest_confidence,
+            "allocation": allocations.get(coin.name, 0),
+            "trade_size": allocations.get(coin.name, 0) * (coin.latest_confidence ** 2),
+            "pnl": coin.latest_pnl,
+            "skimmed": coin.latest_skimmed
         }
-        with open(history_path, "a") as f:
-            json.dump(entry, f)
-            f.write("\n")
-        import subprocess
+        for coin in self.coins
+    }
+  
+    dashboard = {
+        "timestamp": datetime.utcnow().isoformat(),
 
-        try:
-            auto_git_push() 
-        except Exception as e:
-            print("❌ Git push failed:", e)
-        finally:
-            return summary
+        "all_time": {
+            "total_profit_loss": total_profit_loss,
+            "percent_change": percent_change,
+            "total_portfolio_value": total_portfolio_value,
+            "total_vault_value": total_vault_value
+        },
+
+        "last_trade": last_trade
+    }
+
+# ---- WRITE DASHBOARD ----
+    with open("dashboard.json", "w") as f:
+        json.dump(dashboard, f, indent=4)
+
+# ---- WRITE HISTORY ----
+    history_entry = {
+        "timestamp": dashboard["timestamp"],
+        "trading_pot": trading_pot_end,
+        "profit_loss": profit_loss,
+        "daily_loss": self.vault.daily_loss
+    }
+  
+    with open("portfolio_history.json", "a") as f:
+        json.dump(history_entry, f)
+        f.write("\n")
+
+    import subprocess
+
+    try:
+        auto_git_push() 
+    except Exception as e:
+        print("❌ Git push failed:", e)
+    finally:
+        return summary
 
         
