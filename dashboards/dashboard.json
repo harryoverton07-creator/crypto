@@ -1,54 +1,54 @@
 {
-    "timestamp": "2026-08-09T18:45:35.531703",
-    "trading_pot_start": 81398.57561781029,
-    "trading_pot_end": 79770.60410545408,
-    "profit_loss": -1627.9715123562057,
+    "timestamp": "2026-08-09T19:00:04.548504",
+    "trading_pot_start": 1.4590761268871255e+227,
+    "trading_pot_end": 2.1793462430485677e+227,
+    "profit_loss": 7.20270116161442e+226,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "SELL",
-            "confidence": 0.37815541455739765,
+            "confidence": 0.2759711449148792,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.11228608086182874,
+            "confidence": 0.12301787056372943,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.14084745102103385,
+            "confidence": 0.187957703442304,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.6868876635773492,
+            "confidence": 0.7251712145321384,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ADA": {
             "signal": "BUY",
-            "confidence": 0.8537348115602361,
+            "confidence": 0.9057276082163237,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 14172.452799558827,
-        "ETH": 4208.241161704087,
-        "SOL": 5278.659976005165,
-        "XRP": 25743.07445007278,
-        "ADA": 31996.14723046942
+        "BTC": 1.815558846140037e+226,
+        "ETH": 8.093099124699365e+225,
+        "SOL": 1.236536056297102e+226,
+        "XRP": 4.770756065515578e+226,
+        "ADA": 5.958600388448602e+226
     },
     "btc_regime": null,
-    "version": "2026-08-09T18:45:35.531722",
-    "daily_loss": 2340.7606176998333
+    "version": "2026-08-09T19:00:04.548521",
+    "daily_loss": 4.369156313851495e+228
 }
