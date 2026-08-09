@@ -1,107 +1,27 @@
 import os
 import json
-import joblib
-import numpy as np
 from datetime import datetime
+import joblib
+from feature_pipeline.builder import build_features
 from engine.historical import get_candles
+import subprocess
 
-COINS = ["BTC", "ETH", "SOL", "XRP", "ADA"]
+def auto_git_push():
+    try:
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", f"Auto update at {datetime.utcnow().isoformat()}"], check=True)
+        subprocess.run(["git", "push"], check=True)
+        print("✅ Auto Git push successful.")
+    except Exception as e:
+        print("❌ Git push failed:", e)
 
-# =========================================================
-# MODEL FILES — ABSOLUTE PATHS FOR CRON
-# =========================================================
-
-MODEL_DIR = "/home/harryoverton07/crypto_predictor"
 
 MODEL_FILES = {
-    "BTC": {
-        "v1": f"{MODEL_DIR}/btc_model.pkl",
-        "v2": f"{MODEL_DIR}/btc_model_v2.pkl",
-        "momentum": f"{MODEL_DIR}/btc_model_momentum.pkl",
-        "volatility": f"{MODEL_DIR}/btc_model_volatility.pkl",
-        "regime": f"{MODEL_DIR}/btc_model_regime.pkl",
-    },
-    "ETH": {
-        "v1": f"{MODEL_DIR}/eth_model.pkl",
-        "v2": f"{MODEL_DIR}/eth_model_v2.pkl",
-        "momentum": f"{MODEL_DIR}/eth_model_momentum.pkl",
-        "volatility": f"{MODEL_DIR}/eth_model_volatility.pkl",
-        "regime": f"{MODEL_DIR}/eth_model_regime.pkl",
-    },
-    "SOL": {
-        "v1": f"{MODEL_DIR}/sol_model.pkl",
-        "v2": f"{MODEL_DIR}/sol_model_v2.pkl",
-        "momentum": f"{MODEL_DIR}/sol_model_momentum.pkl",
-        "volatility": f"{MODEL_DIR}/sol_model_volatility.pkl",
-        "regime": f"{MODEL_DIR}/sol_model_regime.pkl",
-    },
-    "XRP": {
-        "v1": f"{MODEL_DIR}/xrp_model.pkl",
-        "v2": f"{MODEL_DIR}/xrp_model_v2.pkl",
-        "momentum": f"{MODEL_DIR}/xrp_model_momentum.pkl",
-        "volatility": f"{MODEL_DIR}/xrp_model_volatility.pkl",
-        "regime": f"{MODEL_DIR}/xrp_model_regime.pkl",
-    },
-    "ADA": {
-        "v1": f"{MODEL_DIR}/ada_model.pkl",
-        "v2": f"{MODEL_DIR}/ada_model_v2.pkl",
-        "momentum": f"{MODEL_DIR}/ada_model_momentum.pkl",
-        "volatility": f"{MODEL_DIR}/ada_model_volatility.pkl",
-        "regime": f"{MODEL_DIR}/ada_model_regime.pkl",
-    },
+    # keep your existing mapping here if you use load_models_for_coin
 }
 
 
-def compute_rsi(closes, period=14):
-    if len(closes) < period + 1:
-        return 50.0
-    diffs = np.diff(closes[-(period + 1):])
-    gains = np.where(diffs > 0, diffs, 0.0)
-    losses = np.where(diffs < 0, -diffs, 0.0)
-    avg_gain = gains.mean()
-    avg_loss = losses.mean() if losses.mean() > 0 else 1e-8
-    rs = avg_gain / avg_loss
-    return 100.0 - (100.0 / (1.0 + rs))
-
-
-def build_features(candles):
-    closes = np.array([c["close"] for c in candles])
-    short_ma = closes[-20:].mean()
-    long_ma = closes[-60:].mean()
-    momentum_10 = closes[-1] - closes[-10]
-    volatility_40 = closes[-40:].std()
-    ret_5 = (closes[-1] - closes[-5]) / closes[-5] * 100.0
-    ret_20 = (closes[-1] - closes[-20]) / closes[-20] * 100.0
-    rsi_14 = compute_rsi(closes)
-    ma_slope = (closes[-1] - closes[-20]) / 20.0
-
-    return np.array([
-        short_ma,
-        long_ma,
-        momentum_10,
-        volatility_40,
-        ret_5,
-        ret_20,
-        rsi_14,
-        ma_slope,
-    ])
-
-
-def load_models_for_coin(coin):
-    files = MODEL_FILES[coin]
-    models = {}
-    for key, fname in files.items():
-        if not os.path.exists(fname):
-            raise FileNotFoundError(f"Missing model file for {coin}: {fname}")
-        models[key] = joblib.load(fname)
-    return models
-
-
-import joblib
-from feature_pipeline.builder import build_features
-
 def get_ensemble_signal(coin, candles):
-
     # 1. Build features (no label in live mode)
     features = build_features(candles, include_label=False)
 
@@ -121,7 +41,7 @@ def get_ensemble_signal(coin, candles):
     # scale raw ML confidence
     scaled_conf = raw_conf * 1000
 
-    # regime placeholder (you can upgrade this later)
+    # regime placeholder (upgrade later if you want)
     regime = "normal"
 
     # regime adjustment
@@ -133,18 +53,27 @@ def get_ensemble_signal(coin, candles):
     # clamp confidence between 0 and 1
     scaled_conf = max(0.0, min(1.0, scaled_conf))
 
-    # determine signal
-    if scaled_conf > 0.55:
-        ml_signal = "BUY"
-    elif scaled_conf < 0.45:
-        ml_signal = "SELL"
-    else:
+    # volatility placeholder (you can compute real vol from candles later)
+    vol = 0.0
+
+    # volatility kill‑switch
+    if vol > 0.03:  # 3% candle volatility
         ml_signal = "HOLD"
+        scaled_conf = 0.0
+    else:
+        # determine signal
+        if scaled_conf > 0.55:
+            ml_signal = "BUY"
+        elif scaled_conf < 0.45:
+            ml_signal = "SELL"
+        else:
+            ml_signal = "HOLD"
 
     confidence = scaled_conf
+    risk_factor = 0.0  # placeholder
 
-    # return signal + confidence + placeholders
-    return ml_signal, confidence, 0, 0, regime
+    return ml_signal, confidence, vol, risk_factor, regime
+
 
 class Coin:
     def __init__(self, name):
@@ -157,12 +86,24 @@ class Coin:
         self.latest_regime = None
 
 
-class Engine:
-    def __init__(self, vault):
-        self.vault = vault
-        self.coins = [Coin(name) for name in COINS]
+class Vault:
+    def __init__(self, starting_balance: float):
+        self.balance = starting_balance
+        self.daily_loss = 0.0
+        self.last_reset_date = datetime.utcnow().date()
 
-        self.trading_pot = self.vault.balance
+    def reset_daily_loss_if_needed(self):
+        today = datetime.utcnow().date()
+        if today != self.last_reset_date:
+            self.daily_loss = 0.0
+            self.last_reset_date = today
+
+
+class Engine:
+    def __init__(self, coins, starting_balance: float):
+        self.coins = coins
+        self.vault = Vault(starting_balance)
+
     def variable_cap_allocation(self, coins, trading_pot):
         active = [c for c in coins if c.latest_prob and c.latest_prob > 0.10]
 
@@ -173,29 +114,23 @@ class Engine:
 
         allocations = {}
         for coin in coins:
-            if coin in active:
+            if coin in active and total_conf > 0:
                 allocations[coin.name] = (coin.latest_confidence / total_conf) * trading_pot
             else:
-                allocations[coin.name] = 0
+                allocations[coin.name] = 0.0
 
         return allocations
-    
+
     def run_cycle(self):
 
-    # starting pot
-        trading_pot_start = self.vault.balance
+        # reset daily loss if new day
+        self.vault.reset_daily_loss_if_needed()
 
+        trading_pot_start = self.vault.balance
         positions = {}
 
-    # dynamic allocation using Coin objects
-        allocations = self.variable_cap_allocation(self.coins, trading_pot_start)
-
-
-        btc_regime = None
-
-    # build positions into Coin objects
+        # build positions + signals
         for coin in self.coins:
-
             candles = get_candles(coin.name, "15m", 500)
 
             ml_signal, confidence, vol, risk_factor, regime = get_ensemble_signal(coin.name, candles)
@@ -204,7 +139,8 @@ class Engine:
             coin.latest_confidence = confidence
             coin.latest_risk_factor = risk_factor
             coin.latest_regime = regime
-            coin.latest_prob = confidence  
+            coin.latest_prob = confidence
+            coin.latest_vol = vol
 
             positions[coin.name] = {
                 "signal": ml_signal,
@@ -214,27 +150,37 @@ class Engine:
                 "regime": regime
             }
 
-    # === ML-BASED TRADING LOGIC ===
+        # dynamic allocation
+        allocations = self.variable_cap_allocation(self.coins, trading_pot_start)
 
         profit_loss = 0.0
 
+        # confidence‑weighted sizing + max‑loss cap
+        max_cycle_loss = trading_pot_start * 0.02  # 2% per cycle
+
         for coin in self.coins:
+            base_alloc = allocations.get(coin.name, 0.0)
+
+            # confidence‑weighted position size
+            trade_size = base_alloc * (coin.latest_confidence ** 2)
 
             if coin.latest_signal == "BUY":
-                profit_loss += allocations.get(coin.name, 0) * coin.latest_confidence
-
+                profit_loss += trade_size
             elif coin.latest_signal == "SELL":
-                profit_loss -= allocations.get(coin.name, 0) * coin.latest_confidence
+                profit_loss -= trade_size
 
-            else:
-                pass
+            # cap cycle loss
+            if profit_loss < -max_cycle_loss:
+                profit_loss = -max_cycle_loss
+                break
 
         trading_pot_end = trading_pot_start + profit_loss
 
-     # update vault
+        # update vault + daily loss
         self.vault.balance = trading_pot_end
+        if profit_loss < 0:
+            self.vault.daily_loss += abs(profit_loss)
 
-    # build summary
         summary = {
             "timestamp": datetime.utcnow().isoformat(),
             "trading_pot_start": trading_pot_start,
@@ -243,27 +189,35 @@ class Engine:
             "skimmed": 0.0,
             "positions": positions,
             "allocations": allocations,
-            "btc_regime": btc_regime,
-            "version": datetime.utcnow().isoformat()
+            "btc_regime": None,
+            "version": datetime.utcnow().isoformat(),
+            "daily_loss": self.vault.daily_loss,
         }
 
-    # write dashboard BEFORE return
+        # write dashboard
         os.makedirs("dashboards", exist_ok=True)
         with open(os.path.join("dashboards", "dashboard.json"), "w") as f:
-            json.dump(summary, f, indent=4) 
+            json.dump(summary, f, indent=4)
 
-    # write history
+        # write history
         os.makedirs("history", exist_ok=True)
         history_path = os.path.join("history", "portfolio_history.json")
         entry = {
             "timestamp": summary["timestamp"],
             "trading_pot": trading_pot_end,
+            "profit_loss": profit_loss,
+            "daily_loss": self.vault.daily_loss,
         }
         with open(history_path, "a") as f:
             json.dump(entry, f)
             f.write("\n")
+        import subprocess
 
-        return summary
+        try:
+            auto_git_push() 
+        except Exception as e:
+            print("❌ Git push failed:", e)
+        finally:
+            return summary
 
-
-
+        

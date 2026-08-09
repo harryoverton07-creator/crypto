@@ -1,53 +1,52 @@
-from engine.engine import Engine
-from shared_vault import Vault
-from live_data import get_live_ohlc
-import shutil
+from engine.engine import Engine, Coin
+from datetime import datetime
+import time
+import traceback
+
+def build_engine():
+    coins = [
+        Coin("BTC"),
+        Coin("ETH"),
+        Coin("SOL"),
+        Coin("XRP"),
+        Coin("ADA")
+    ]
+
+    starting_balance = 1000  # adjust if needed
+    return Engine(coins, starting_balance)
+
+
 def main():
-    vault = Vault()
-    vault.load()
+    engine = build_engine()
 
-    for coin in ["BTC", "ETH", "SOL", "XRP", "ADA"]:
-        vault.data[coin] = get_live_ohlc(coin)
+    print("\n🚀 Trading engine started")
+    print(f"⏱  {datetime.utcnow().isoformat()} UTC\n")
 
-    engine = Engine(vault)
-    summary = engine.run_cycle()
+    while True:
+        try:
+            summary = engine.run_cycle()
 
-    print(summary)   # ← ADD THIS
+            print("────────────────────────────────────────────")
+            print(f"Cycle completed at {summary['timestamp']}")
+            print(f"Start: £{summary['trading_pot_start']:.2f}")
+            print(f"End:   £{summary['trading_pot_end']:.2f}")
+            print(f"P/L:   £{summary['profit_loss']:.2f}")
+            print(f"Daily Loss: £{summary['daily_loss']:.2f}")
+            print("────────────────────────────────────────────\n")
 
-    vault.save()
+            # 15‑minute cycle (Kraken candle interval)
+            time.sleep(900)
+
+        except KeyboardInterrupt:
+            print("\n🛑 Manual stop received. Shutting down safely.\n")
+            break
+
+        except Exception as e:
+            print("\n❌ ERROR during cycle:")
+            print(traceback.format_exc())
+            print("Continuing engine...\n")
+            time.sleep(5)
+
 
 if __name__ == "__main__":
     main()
-shutil.copy("dashboards/dashboard.json", "docs/dashboard.json")
-shutil.copy("vaults/vault.json", "docs/vault.json")
-import os
-import shutil
-import subprocess
-from datetime import datetime
-
-# ---------------------------------------------------------
-# COPY FILES INTO /docs FOR GITHUB PAGES
-# ---------------------------------------------------------
-shutil.copy("dashboards/dashboard.json", "docs/dashboard.json")
-shutil.copy("vaults/vault.json", "docs/vault.json")
-
-# ---------------------------------------------------------
-# AUTO GIT PUSH (CRON SAFE)
-# ---------------------------------------------------------
-
-# Ensure script runs inside repo
-os.chdir("/home/harryoverton07/crypto_predictor")
-
-# Use SSH key for GitHub
-os.environ["GIT_SSH_COMMAND"] = "ssh -i /home/harryoverton07/.ssh/id_rsa"
-
-# Timestamp commit message
-commit_message = f"Auto update at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-
-try:
-    subprocess.run(["/usr/bin/git", "add", "."], check=True)
-    subprocess.run(["/usr/bin/git", "commit", "-m", commit_message], check=False)
-    subprocess.run(["/usr/bin/git", "push", "origin", "main"], check=True)
-    print("✅ Auto Git push successful.")
-except Exception as e:
-    print("❌ Auto Git push failed:", e)
