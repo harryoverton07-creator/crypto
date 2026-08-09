@@ -1,49 +1,49 @@
 {
-    "timestamp": "2026-08-09T19:00:15.168462",
+    "timestamp": "2026-08-09T19:00:16.841414",
     "all_time": {
-        "total_profit_loss": 4551.383855783755,
-        "percent_change": 455.13838557837556,
-        "total_portfolio_value": 11102.76771156751,
-        "total_vault_value": 5551.383855783755
+        "total_profit_loss": 7414.16657866602,
+        "percent_change": 741.416657866602,
+        "total_portfolio_value": 16828.33315733204,
+        "total_vault_value": 8414.16657866602
     },
     "last_trade": {
         "BTC": {
             "signal": "SELL",
             "confidence": 0.2759711449148792,
-            "allocation": 462.4719041242578,
-            "trade_size": 35.221893897910896,
+            "allocation": 700.963172488994,
+            "trade_size": 53.3854062648459,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "ETH": {
             "signal": "SELL",
             "confidence": 0.12301787056372943,
-            "allocation": 206.15310654477065,
-            "trade_size": 3.1197966965205004,
+            "allocation": 312.4638151926695,
+            "trade_size": 4.728638800349963,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "SOL": {
             "signal": "SELL",
             "confidence": 0.187957703442304,
-            "allocation": 314.97915128987916,
-            "trade_size": 11.127614413960876,
+            "allocation": 477.41015872982115,
+            "trade_size": 16.86599300905541,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "XRP": {
             "signal": "BUY",
             "confidence": 0.7251712145321384,
-            "allocation": 1215.2405009741904,
-            "trade_size": 639.0625208576488,
+            "allocation": 1841.9255944056426,
+            "trade_size": 968.6194729763149,
             "pnl": 0.0,
             "skimmed": 0.0
         },
         "ADA": {
             "signal": "BUY",
             "confidence": 0.9057276082163237,
-            "allocation": 1517.8165518678077,
-            "trade_size": 1245.129425133593,
+            "allocation": 2300.536521171467,
+            "trade_size": 1887.2278817753606,
             "pnl": 0.0,
             "skimmed": 0.0
         }
