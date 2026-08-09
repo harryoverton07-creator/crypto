@@ -229,8 +229,27 @@ class Engine:
             "btc_regime": btc_regime,
         }
 
-        return summary
+# ⭐ ADD VERSION STAMP HERE 
+        summary["version"] = datetime.utcnow().isoformat()
 
+# ⭐ WRITE DASHBOARD BEFORE RETURN
+        os.makedirs("dashboards", exist_ok=True)
+        with open(os.path.join("dashboards", "dashboard.json"), "w") as f:
+            json.dump(summary, f, indent=2)
+
+# ⭐ WRITE HISTORY BEFORE RETURN
+        os.makedirs("history", exist_ok=True)
+        history_path = os.path.join("history", "portfolio_history.json")
+        entry = {
+            "timestamp": summary["timestamp"],
+            "trading_pot": trading_pot_end,
+            "vault": self.vault.balance,
+            "profit_loss": profit_loss,
+        }
+# append entry to history file here…
+
+# ⭐ NOW return summary
+        return summary
        
 
         # write dashboard summary
