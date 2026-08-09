@@ -1,8 +1,8 @@
 {
-    "timestamp": "2026-08-09T20:30:43.008925",
-    "trading_pot_start": NaN,
-    "trading_pot_end": NaN,
-    "profit_loss": NaN,
+    "timestamp": "2026-08-09T20:30:47.772703",
+    "trading_pot_start": 1020092.9367885087,
+    "trading_pot_end": 1703285.380711974,
+    "profit_loss": 683192.4439234654,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
@@ -42,13 +42,13 @@
         }
     },
     "allocations": {
-        "BTC": NaN,
+        "BTC": 56726.7255482045,
         "ETH": 0.0,
-        "SOL": NaN,
-        "XRP": NaN,
-        "ADA": NaN
+        "SOL": 96963.35575859084,
+        "XRP": 507129.31636312424,
+        "ADA": 359273.5391185892
     },
     "btc_regime": null,
-    "version": "2026-08-09T20:30:43.008946",
-    "daily_loss": 8.080304418103082e+302
+    "version": "2026-08-09T20:30:47.772732",
+    "daily_loss": 2340.7606176998333
 }
