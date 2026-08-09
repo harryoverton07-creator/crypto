@@ -1,54 +1,54 @@
 {
-    "timestamp": "2026-08-09T18:15:32.200918",
-    "trading_pot_start": 28080.711787666874,
-    "trading_pot_end": 45636.47475047446,
-    "profit_loss": 17555.76296280759,
+    "timestamp": "2026-08-09T18:30:03.893694",
+    "trading_pot_start": 7.969104139565275e+205,
+    "trading_pot_end": 1.4213931497937733e+206,
+    "profit_loss": 6.244827358372459e+205,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "SELL",
-            "confidence": 0.29082442362978195,
+            "confidence": 0.30047768474493064,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.009929806077045265,
+            "confidence": 0.07823619015745381,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.17460166058810078,
+            "confidence": 0.13133322157912705,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.8827948244444483,
+            "confidence": 0.9694365614409709,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ADA": {
             "signal": "BUY",
-            "confidence": 0.9100966019121995,
+            "confidence": 1.0,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 3616.2128586978974,
+        "BTC": 9.9720582467768e+204,
         "ETH": 0.0,
-        "SOL": 2171.0582704445105,
-        "XRP": 10976.980392168998,
-        "ADA": 11316.460266355467
+        "SOL": 4.358601659340009e+204,
+        "XRP": 3.217303097050529e+205,
+        "ADA": 3.3187350519030645e+205
     },
     "btc_regime": null,
-    "version": "2026-08-09T18:15:32.200938",
-    "daily_loss": 712.7891053436275
+    "version": "2026-08-09T18:30:03.893713",
+    "daily_loss": 4.893999865429838e+205
 }
