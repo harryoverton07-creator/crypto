@@ -182,15 +182,27 @@ class Engine:
     # dynamic allocation using Coin objects
         allocations = variable_cap_allocation(self.coins, self.trading_pot)
 
-    # simple P&L simulation
-        profit_loss = 0.0
-        for coin, pos in positions.items():
-            if pos["signal"] == "BUY":
-                profit_loss += 1.5 * allocations[coin]
-            elif pos["signal"] == "SELL":
-                profit_loss -= 1.0 * allocations[coin]
+    # === NEW ML-BASED TRADING LOGIC ===
 
+        profit_loss = 0.0
+  
+        for coin in self.coins:
+
+    # BUY → increase profit based on allocation and confidence
+            if coin.latest_signal == "BUY":
+                profit_loss += allocations.get(coin.name, 0) * coin.latest_confidence
+
+    # SELL → decrease profit based on allocation and confidence
+            elif coin.latest_signal == "SELL":
+                profit_loss -= allocations.get(coin.name, 0) * coin.latest_confidence
+
+    # HOLD → no change
+            else:
+                pass
+
+# update trading pot
         trading_pot_end = trading_pot_start + profit_loss
+
 
     # skim 10% of profit to vault if positive
         skimmed = 0.0
