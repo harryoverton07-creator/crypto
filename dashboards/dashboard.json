@@ -1,20 +1,20 @@
 {
-    "timestamp": "2026-08-09T15:45:00.901181",
-    "trading_pot_start": 1.4285254509769243e+34,
-    "trading_pot_end": 1.9372881519608515e+34,
-    "profit_loss": 5.087627009839273e+33,
+    "timestamp": "2026-08-09T15:45:06.975883",
+    "trading_pot_start": 1.9372881519608515e+34,
+    "trading_pot_end": 2.593265693727903e+34,
+    "profit_loss": 6.559775417670511e+33,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "BUY",
-            "confidence": 0.7842134348578848,
+            "confidence": 0.6815484163875188,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
-            "signal": "BUY",
-            "confidence": 0.6262795871302755,
+            "signal": "HOLD",
+            "confidence": 0.5144103380247191,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
@@ -28,27 +28,27 @@
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.5731562534332839,
+            "confidence": 0.737265185872772,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ADA": {
             "signal": "SELL",
-            "confidence": 0.3808050078449858,
+            "confidence": 0.1490851806550866,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 3.8199509038821567e+33,
-        "ETH": 3.050645613301413e+33,
-        "SOL": 2.767855195909702e+33,
-        "XRP": 2.791878653245659e+33,
-        "ADA": 1.8549241434303127e+33
+        "BTC": 4.9814713606086183e+33,
+        "ETH": 3.759850811558667e+33,
+        "SOL": 4.1531803208615736e+33,
+        "XRP": 5.388708007078367e+33,
+        "ADA": 1.089671019501288e+33
     },
     "btc_regime": null,
-    "version": "2026-08-09T15:45:00.901202",
+    "version": "2026-08-09T15:45:06.975900",
     "daily_loss": 362174582136.1868
 }
