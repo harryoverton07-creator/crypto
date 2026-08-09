@@ -71,26 +71,3 @@ def build_features(candles, include_label=False):
     df = df.dropna().reset_index(drop=True)
     return df
 
-    # RSI
-    df["rsi"] = compute_rsi(df["close"])
-
-    # EMA
-    df["ema20"] = compute_ema(df["close"], 20)
-    df["ema50"] = compute_ema(df["close"], 50)
-
-    # ATR
-    df["atr"] = compute_atr(df)
-
-    # MACD
-    df["macd"], df["macd_signal"], df["macd_hist"] = compute_macd(df["close"])
-
-    # Volatility
-    df["volatility"] = compute_volatility(df["close"])
-
-    # Trend strength (1 = bullish, 0 = bearish)
-    df["trend_strength"] = compute_trend_strength(df)
-
-    # Drop NaN rows created by rolling windows
-    df = df.dropna().reset_index(drop=True)
-
-    return df
