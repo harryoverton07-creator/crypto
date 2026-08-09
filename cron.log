@@ -9941,3 +9941,5 @@ To https://github.com/harryoverton07-creator/crypto.git
    5b4b9fe..596d56d  main -> main
 /home/harryoverton07/crypto_predictor/runner.py:23: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   print(f"⏱  {datetime.utcnow().isoformat()} UTC\n")
+[main ccc7dd8] Auto update at 2026-08-09T20:30:06.985938
+ 10 files changed, 230 insertions(+), 91 deletions(-)
