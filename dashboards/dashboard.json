@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-08-09T14:07:37.155634",
+    "timestamp": "2026-08-09T14:15:04.222027",
     "trading_pot_start": 1000,
     "trading_pot_end": 980.0,
     "profit_loss": -20.0,
@@ -7,48 +7,48 @@
     "positions": {
         "BTC": {
             "signal": "SELL",
-            "confidence": 0.39221500804051357,
+            "confidence": 0.3687635520280348,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.19164430542407754,
+            "confidence": 0.27818133814359164,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.14886170720974662,
+            "confidence": 0.15310260789193483,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
-            "signal": "HOLD",
-            "confidence": 0.49279271446472117,
+            "signal": "BUY",
+            "confidence": 0.6033776904629955,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ADA": {
             "signal": "SELL",
-            "confidence": 0.07308483820588488,
+            "confidence": 0.29577976159639113,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         }
     },
     "allocations": {
-        "BTC": 320.0412992482773,
-        "ETH": 156.3787495228127,
-        "SOL": 121.46881992542932,
-        "XRP": 402.1111313034807,
-        "ADA": 0.0
+        "BTC": 217.02123219529963,
+        "ETH": 163.7126458014753,
+        "SOL": 90.10249639447962,
+        "XRP": 355.09412235371457,
+        "ADA": 174.06950325503092
     },
     "btc_regime": null,
-    "version": "2026-08-09T14:07:37.155654",
+    "version": "2026-08-09T14:15:04.222047",
     "daily_loss": 20.0
 }
