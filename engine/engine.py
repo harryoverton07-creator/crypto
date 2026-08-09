@@ -168,13 +168,13 @@ class Engine:
             coin.latest_risk_factor = risk_factor
             coin.latest_regime = regime
             coin.latest_prob = confidence  # or whatever metric you use
-        positions[coin.name] = {
-            "signal": ml_signal,
-            "confidence": confidence,
-            "volatility": vol,
-            "risk_factor": risk_factor,
-            "regime": regime
-        }
+            positions[coin.name] = {
+                "signal": ml_signal,
+                "confidence": confidence,
+                "volatility": vol,
+                "risk_factor": risk_factor,
+                "regime": regime
+            }
 
     # load coins + trading pot
         coins = self.coins
