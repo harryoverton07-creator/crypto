@@ -1,34 +1,34 @@
 {
-    "timestamp": "2026-08-09T17:00:00.451237",
-    "trading_pot_start": 6.063132142087914e+123,
-    "trading_pot_end": 8.53790142435648e+123,
-    "profit_loss": 2.4747692822685656e+123,
+    "timestamp": "2026-08-09T17:00:05.960742",
+    "trading_pot_start": 8.53790142435648e+123,
+    "trading_pot_end": 1.222327673324951e+124,
+    "profit_loss": 3.685375308893029e+123,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
             "signal": "BUY",
-            "confidence": 0.7045628379380644,
+            "confidence": 0.5909454719285462,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.32414368478800254,
+            "confidence": 0.3243435354832825,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.08598096238495659,
+            "confidence": 0.27670862021281334,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
-            "signal": "HOLD",
-            "confidence": 0.5018469393899897,
+            "signal": "BUY",
+            "confidence": 0.7308753080010217,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
@@ -42,13 +42,13 @@
         }
     },
     "allocations": {
-        "BTC": 1.7773019059676808e+123,
-        "ETH": 8.176718353001569e+122,
-        "SOL": 0.0,
-        "XRP": 1.2659389253230563e+123,
-        "ADA": 2.20221947549702e+123
+        "BTC": 1.804594341500312e+123,
+        "ETH": 9.90461111285255e+122,
+        "SOL": 8.449964235292085e+122,
+        "XRP": 2.2319038013043944e+123,
+        "ADA": 2.665945746737311e+123
     },
     "btc_regime": null,
-    "version": "2026-08-09T17:00:00.451257",
+    "version": "2026-08-09T17:00:05.960760",
     "daily_loss": 1.5811168697319123e+92
 }
