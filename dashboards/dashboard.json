@@ -1,34 +1,34 @@
 {
-    "timestamp": "2026-08-09T16:30:20.333717",
-    "trading_pot_start": 4894.40375963334,
-    "trading_pot_end": 4796.515684440673,
-    "profit_loss": -97.8880751926668,
+    "timestamp": "2026-08-09T16:45:05.112116",
+    "trading_pot_start": 3.843613789850356e+101,
+    "trading_pot_end": 6.070968564882093e+101,
+    "profit_loss": 2.2273547750317373e+101,
     "skimmed": 0.0,
     "positions": {
         "BTC": {
-            "signal": "SELL",
-            "confidence": 0.35206822841256796,
+            "signal": "BUY",
+            "confidence": 0.6468877451093733,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "ETH": {
             "signal": "SELL",
-            "confidence": 0.06846742217464924,
+            "confidence": 0.2709087038084772,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "SOL": {
             "signal": "SELL",
-            "confidence": 0.26494631006197855,
+            "confidence": 0.15826518882401766,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
         },
         "XRP": {
             "signal": "BUY",
-            "confidence": 0.7146578476609328,
+            "confidence": 0.7202080909226118,
             "volatility": 0.0,
             "risk_factor": 0.0,
             "regime": "normal"
@@ -42,13 +42,13 @@
         }
     },
     "allocations": {
-        "BTC": 739.0249466589513,
-        "ETH": 0.0,
-        "SOL": 556.1476920081267,
-        "XRP": 1500.1353008432047,
-        "ADA": 2099.0958201230574
+        "BTC": 8.891798355858563e+100,
+        "ETH": 3.723776784030296e+100,
+        "SOL": 2.175434851586361e+100,
+        "XRP": 9.899623492881226e+100,
+        "ADA": 1.3745504414147113e+101
     },
     "btc_regime": null,
-    "version": "2026-08-09T16:30:20.333737",
-    "daily_loss": 139.7133545749158
+    "version": "2026-08-09T16:45:05.112135",
+    "daily_loss": 1.5811168697319123e+92
 }
