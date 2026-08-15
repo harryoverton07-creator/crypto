@@ -15,6 +15,7 @@ def auto_git_push():
     except Exception as e:
         print("❌ Git push failed:", e)
 import json
+MODE = "paper"   # options: paper, live
 
 def execute_paper_trade(coin, side, size):
     # Load wallet
@@ -297,3 +298,6 @@ class Engine:
             return summary
 
         
+def log_paper_trade(coin, side, size, price):
+    with open("paper_trades.log", "a") as f:
+        f.write(f"{coin},{side},{size},{price}\n")
